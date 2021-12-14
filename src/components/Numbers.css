@@ -1,0 +1,30 @@
+/* --------------------------------- Numbers Section  starts  
+                        -------------------------------------------------------*/
+.numbers {
+  background-color: var(--bgcolor);
+  height: 20%;
+  width: 100%;
+  margin-top: 5rem;
+  padding: 3rem 0;
+}
+
+.numbers .container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+  /* background-color: aqua; */
+}
+.numbers .container .row {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.numbers h2 {
+  font-size: 40px;
+  font-weight: bolder;
+}
+.numbers p {
+  font-size: 20px;
+}
