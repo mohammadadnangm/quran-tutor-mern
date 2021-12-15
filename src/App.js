@@ -23,7 +23,7 @@ const App = () => {
         <Route path="/findstudent" component={FindStudent}></Route>
         <Route path="/priceplan" component={PricePlan}></Route>
         <Route path="/quran" component={Quran}></Route>
-        <Route path="/qaida" component={Qaida}></Route>
+        <Route path="/qaida`" component={Qaida}></Route>
         <Route path="/about" component={About}></Route>
         <Route path="/contact" component={Contact}></Route>
         <Route path="/service" component={Service}></Route>
