@@ -6,15 +6,13 @@ const AboutUs = () => {
   const [aboutData, setAboutData] = useState(howToUseApp);
   return (
     <>
-      {/* 2nd part of bayt us section  */}
-
-      <section className="common-section our-services our-services-rightside">
-        <div className="container mb-5">
+      <section className="about-section">
+        <div className="container mb-5 about-container">
           <div className="row">
             {/* 1section right side data  */}
-            <div className="col-12 col-lg-7 our-services-rightside-content d-flex justify-content-center align-items-start flex-column">
-              <h3 className="mini-title">About Quran Tutor</h3>
-              <h1 className="main-heading">A Brief Summary</h1>
+            <div className="col-12 col-lg-7 d-flex justify-content-center align-items-start flex-column">
+              <h1 className="mini-title">About Quran Tutor</h1>
+              <h3 className="main-heading">A Brief Summary</h3>
               <p className="description">
                 Do you want to read the Quran with proper pronunciation
                 (Tajweed)? Would you like your child to memorize the Quran
@@ -30,8 +28,12 @@ const AboutUs = () => {
             </div>
 
             {/* images section  */}
-            <div className="col-12 col-lg-5  our-service-rightside-img">
-              <img src="./images/hero1.png" alt="aboutusIMg" />
+            <div className="col-12 col-lg-5 text-center  about-section-rightside-img">
+              <img
+                src="./images/aboutsection.png"
+                alt="aboutusIMg"
+                className="about-img"
+              />
             </div>
           </div>
         </div>

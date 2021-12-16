@@ -8,11 +8,11 @@ const WhyUs = () => {
     <>
       {/* 2nd part of bayt us section  */}
 
-      <section className="common-section our-services our-services-rightside">
-        <div className="container mb-5">
+      <section className="whyus-section">
+        <div className="container mb-5 whyus-container">
           <div className="row">
             {/* 1section right side data  */}
-            <div className="col-12 col-lg-7 our-services-rightside-content d-flex justify-content-center align-items-start flex-column">
+            <div className="col-12 col-lg-7 whyus-section-lefttside d-flex justify-content-center align-items-start flex-column">
               <h3 className="mini-title">Why Choose Us?</h3>
               <h1 className="main-heading">
                 World class Services <br /> Simple, Reliable, Secure
@@ -22,9 +22,9 @@ const WhyUs = () => {
                 const { id, title, info } = curElem;
                 return (
                   <>
-                    <div className="row our-services-info" key={id}>
-                      <div className="col-1 our-services-number">{id}</div>
-                      <div className="col-10 our-services-data">
+                    <div className="row whyus-section-info" key={id}>
+                      <div className="col-1 whyus-section-number">{id}</div>
+                      <div className="col-10 whyus-section-data">
                         <h2>{title}</h2>
                         <p className="main-hero-para">{info}</p>
                       </div>
@@ -34,12 +34,14 @@ const WhyUs = () => {
               })}
 
               <br />
-              <button className="btn-style btn-style-border">learn more</button>
+              <button className="btn-style btn-style-border whyus-section-button">
+                learn more
+              </button>
             </div>
 
             {/* images section  */}
-            <div className="col-12 col-lg-5  our-service-rightside-img">
-              <img src="./images/callcenter.jpg" alt="aboutusIMg" />
+            <div className="col-12 col-lg-5  text-center useapp-section-leftside-img">
+              <img src="./images/callcenter.jpg" alt="WhyUsIMg" />
             </div>
           </div>
         </div>

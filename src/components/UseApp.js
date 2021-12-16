@@ -6,15 +6,16 @@ const UseApp = () => {
   const [aboutData, setAboutData] = useState(useAppApi);
   return (
     <>
-      <section className="common-section our-services">
-        <div className="container mb-5">
+      <section className="useapp-section">
+        <div className="container mb-5 useapp-container">
           <div className="row">
-            <div className="col-12 col-lg-5 text-center our-service-leftside-img">
-              <img src="./images/hero3.jpg" alt="aboutusIMg" />
+            <div className="col-12 col-lg-5 text-center useapp-section-leftside-img">
+              <img src="./images/appimg.jpeg" alt="aboutusIMg" />
             </div>
 
-            {/* 1section right side data  */}
-            <div className="col-12 col-lg-7 our-services-list">
+            {/* 2nd section right side data  */}
+
+            <div className="col-12 col-lg-7 useapp-section-rightside d-flex justify-content-center align-items-start flex-column">
               <h3 className="mini-title">Quran Tutor App</h3>
               <p className="mini-para">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
@@ -28,9 +29,9 @@ const UseApp = () => {
                 const { id, title, info } = curElem;
                 return (
                   <>
-                    <div className="row our-services-info" key={id}>
-                      <div className="col-1 our-services-number">{id}</div>
-                      <div className="col-10 our-services-data">
+                    <div className="row useapp-section-info" key={id}>
+                      <div className="col-1 useapp-section-number">{id}</div>
+                      <div className="col-10 useapp-section-data">
                         <h2>{title}</h2>
                         <p className="main-hero-para">{info}</p>
                       </div>
@@ -40,7 +41,9 @@ const UseApp = () => {
               })}
 
               <br />
-              <button className="btn-style btn-style-border">learn more</button>
+              <button className="btn-style btn-style-border useapp-button">
+                Download App
+              </button>
             </div>
           </div>
         </div>

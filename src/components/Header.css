@@ -6,14 +6,14 @@ header {
   width: 100%;
 }
 
-.main-hero-container {
+.header-container {
   height: 80vh;
   display: flex;
   width: 80%;
   /* background-color: aqua; */
 }
 
-.main-hero-container h1 {
+.header-container h1 {
   text-transform: capitalize;
   font-weight: bolder;
 }
@@ -26,7 +26,7 @@ header {
   width: 75%;
 }
 
-.main-hero-container h3 {
+.header-container h3 {
   font-weight: lighter;
 }
 
@@ -61,10 +61,18 @@ header {
 }
 
 /* right side of hero section  */
-
-.main-herosection-images {
-  position: relative;
+.header-section img {
+  height: 300px;
+  width: 400px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8rem;
+  margin-left: 7rem;
+  margin-bottom: 0rem;
 }
+/* .main-herosection-images {
+  position: relative;
+} */
 
 .main-herosection-images img {
   width: 60%;

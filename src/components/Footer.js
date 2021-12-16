@@ -16,23 +16,29 @@ const Footer = () => {
                       <a href="#">About Us</a>
                     </li>
                     <li>
-                      <a href="#">Contact</a>
+                      <a href="#">Contact Us</a>
                     </li>
                     <li>
-                      <a href="#">Our Mission</a>
+                      <a href="#">FAQs</a>
                     </li>
                     <li>
-                      <a href="#">Reliable, Secure</a>
+                      <a href="#">Prices and Plans</a>
+                    </li>
+                    <li>
+                      <a href="#">Services</a>
+                    </li>
+                    <li>
+                      <a href="#">Privacy Policy</a>
+                    </li>
+                    <li>
+                      <a href="#">ToS</a>
                     </li>
                   </ul>
                 </div>
 
                 <div className="col-12 col-lg-3">
-                  <h2>Available</h2>
+                  <h2>Download App</h2>
                   <ul>
-                    <li>
-                      <a href="#">Web</a>
-                    </li>
                     <li>
                       <a href="#">IOS</a>
                     </li>
@@ -40,25 +46,25 @@ const Footer = () => {
                       <a href="#">Android</a>
                     </li>
                     <li>
-                      <a href="#">How to Start?</a>
+                      <a href="#">How to Use App?</a>
                     </li>
                   </ul>
                 </div>
 
                 <div className="col-12 col-lg-3">
-                  <h2>Services</h2>
+                  <h2>Usefull Links</h2>
                   <ul>
                     <li>
-                      <a href="#">Quran Teaching</a>
+                      <a href="#">Find Tutors</a>
                     </li>
                     <li>
-                      <a href="#">Earning</a>
+                      <a href="#">Find Students</a>
                     </li>
                     <li>
-                      <a href="#">Learning</a>
+                      <a href="#">Read Quran</a>
                     </li>
                     <li>
-                      <a href="#">Support</a>
+                      <a href="#">Read Qaida</a>
                     </li>
                   </ul>
                 </div>
@@ -79,6 +85,19 @@ const Footer = () => {
                     </div>
                     <div className="col-3 mx-auto">
                       <i class="fab fa-twitter fontawesome-style"></i>
+                    </div>
+                  </div>
+
+                  <div className="row2">
+                    <div className="col-12 mx-auto img1">
+                      <a href="#">
+                        <img src="./images/appstore.png" alt="App Store" />
+                      </a>
+                    </div>
+                    <div className="col-12 mx-auto img2">
+                      <a href="#">
+                        <img src="./images/playstore.png" alt="App Store" />
+                      </a>
                     </div>
                   </div>
                 </div>

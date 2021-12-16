@@ -6,6 +6,22 @@ footer {
   background-color: #182334;
   color: #fff;
 }
+.row2 {
+  /* background-color: aquamarine; */
+  margin-top: 1rem;
+  align-items: left;
+  text-align: left;
+  justify-content: left;
+  display: grid;
+}
+img {
+  height: 10rem;
+  width: 25rem;
+  text-align: left;
+  float: left;
+  justify-content: left;
+  margin: -1rem;
+}
 
 footer h2 {
   color: #fff;

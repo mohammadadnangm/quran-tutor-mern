@@ -9,7 +9,7 @@ import UseApp from "./UseApp";
 import WhyUs from "./WhyUs";
 import ForTutor from "./ForTutor";
 import Footer from "./Footer";
-import Testimonials from "./Testimonials";
+//import Testimonials from "./Testimonials";
 
 const Home = () => {
   return (

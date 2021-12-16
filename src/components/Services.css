@@ -5,6 +5,9 @@
   margin-top: 5rem;
   padding: 5rem 0;
 }
+.service-container {
+  width: 80%;
+}
 
 .service-main-container .main-heading {
   margin: 3rem 0;

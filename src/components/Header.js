@@ -4,8 +4,8 @@ import "./Header.css";
 const Header = () => {
   return (
     <>
-      <header>
-        <section className="container main-hero-container">
+      <header className="header-section">
+        <section className="container header-container">
           <div className="row">
             <div className="col-12 col-lg-6 header-left-side d-flex justify-content-center flex-column align-items-start ">
               <h1 className="display-2">
@@ -27,8 +27,9 @@ const Header = () => {
                 <div className="input-group-button">Get it now</div>
               </div>
             </div>
-            {/*  --------------- main header right side--------------  */}
-            <div className="col-12 col-lg-6 header-right-side d-flex justify-content-center align-items-center main-herosection-images">
+
+            {/*  --------------- header right side--------------  */}
+            <div className="col-12 col-lg-6 header-right-side text-center useapp-section-leftside-img">
               <img
                 src="./images/hero1.png"
                 alt="heroimg"
