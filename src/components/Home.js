@@ -23,7 +23,7 @@ const Home = () => {
       <UseApp />
       <WhyUs />
       <ForTutor />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Footer />
     </>
   );
