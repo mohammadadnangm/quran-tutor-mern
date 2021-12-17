@@ -1,16 +1,20 @@
-/* --------------------------------- Hero sEction  starts  
+/* --------------------------------- Header Section  starts  
                         -------------------------------------------------------*/
 header {
   background-color: var(--bgcolor);
-  min-height: 100vh;
+  min-height: 80vh;
   width: 100%;
+  padding-bottom: 2rem;
 }
 
 .header-container {
-  height: 80vh;
-  display: flex;
+  /* height: 80vh; */
+  /* display: flex; */
   width: 80%;
   /* background-color: aqua; */
+}
+.header-section .header-right-side-img {
+  padding-bottom: 0rem;
 }
 
 .header-container h1 {
@@ -67,8 +71,6 @@ header {
   justify-content: center;
   align-items: center;
   margin-top: 8rem;
-  margin-left: 7rem;
-  margin-bottom: 0rem;
 }
 /* .main-herosection-images {
   position: relative;

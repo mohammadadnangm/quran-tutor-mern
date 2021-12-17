@@ -1,18 +1,25 @@
 import React, { useState } from "react";
 import "./AboutUs.css";
-import howToUseApp from "../API/useAppApi.js";
 
 const AboutUs = () => {
-  const [aboutData, setAboutData] = useState(howToUseApp);
   return (
     <>
-      <section className="about-section">
-        <div className="container mb-5 about-container">
+      <section className="aboutus-section">
+        <div className="container mb-5 aboutus-container">
           <div className="row">
-            {/* 1section right side data  */}
-            <div className="col-12 col-lg-7 d-flex justify-content-center align-items-start flex-column">
-              <h1 className="mini-title">About Quran Tutor</h1>
-              <h3 className="main-heading">A Brief Summary</h3>
+            {/* images section  right side*/}
+            <div className="col-12 col-lg-5 text-center  aboutus-section-rightside-img">
+              <img
+                src="./images/aboutsection.png"
+                alt="aboutusImg"
+                className="about-img"
+              />
+            </div>
+
+            {/* 1section left side data  */}
+            <div className="col-12 col-lg-7 d-flex justify-content-center align-items-start flex-column aboutus-section-lefttside">
+              <h1 className="title">About Quran Tutor</h1>
+              <h3 className="heading">A Brief Summary</h3>
               <p className="description">
                 Do you want to read the Quran with proper pronunciation
                 (Tajweed)? Would you like your child to memorize the Quran
@@ -24,16 +31,9 @@ const AboutUs = () => {
               </p>
 
               <br />
-              <button className="btn-style btn-style-border">About Us</button>
-            </div>
-
-            {/* images section  */}
-            <div className="col-12 col-lg-5 text-center  about-section-rightside-img">
-              <img
-                src="./images/aboutsection.png"
-                alt="aboutusIMg"
-                className="about-img"
-              />
+              <button className="btn-style btn-style-border aboutus-section-button">
+                About Us
+              </button>
             </div>
           </div>
         </div>

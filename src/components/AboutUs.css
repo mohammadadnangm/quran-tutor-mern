@@ -1,23 +1,35 @@
-.about-container {
+.aboutus-section {
+  background: #000;
+  margin-top: 5rem;
+  padding-bottom: 1rem;
+}
+.aboutus-container {
   width: 80%;
 }
+.aboutus-section .title {
+  color: aliceblue;
+}
+.aboutus-section .heading {
+  color: aliceblue;
+}
 
-.about-section .description {
+.aboutus-section .description {
+  color: azure;
   font-size: 15px;
 }
 
 /* 2nd section of about us  */
-.about-section-rightside-img {
+.aboutus-section-rightside-img {
   /* background-color: aqua; */
   text-align: center;
   justify-content: center;
   display: flex;
 }
 
-.about-section img {
+.aboutus-section img {
   width: 400px;
   height: 400px;
-  margin-top: 2rem;
-  box-shadow: rgba(0, 0, 0, 0.25) 0.8rem 0.8rem 0.8rem 0.8rem;
-  border-radius: 1.5rem;
+  /* margin-top: 0rem; */
+  /* box-shadow: rgba(0, 0, 0, 0.25) 0.8rem 0.8rem 0.8rem 0.8rem; */
+  /* border-radius: 1.5rem; */
 }

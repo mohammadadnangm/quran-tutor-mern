@@ -1,13 +1,17 @@
 /* --------------------------------- Services Section starts  
                         -------------------------------------------------------*/
 
-.service-main-container {
+.fortutor-section {
   margin-top: 5rem;
-  padding: 5rem 0;
+  margin-bottom: 5rem;
+}
+.fortutor-container {
+  width: 80%;
 }
 
-.service-main-container .main-heading {
-  margin: 3rem 0;
+.fortutor-section .heading {
+  margin: 5rem 0;
+  font-size: 34px;
 }
 
 .work-container-subdiv {
@@ -32,20 +36,12 @@
   margin: 2rem 0;
 }
 
-@media (min-width: 1400px) {
-  .service-container .col-xxl-4 {
-    flex: 0 0 auto;
-    width: 30% !important;
-    margin: auto;
-  }
+.fortutor-section button {
+  width: 200px;
+  font-size: 15px;
 }
-
-@media (min-width: 992px) {
-  .service-container .col-lg-4 {
-    flex: 0 0 auto;
-    width: 30% !important;
-    margin: 2.5rem auto;
-  }
+.d-grid.gap-2.col-3.mx-auto.find-tutor-button {
+  justify-content: center;
 }
 
 /* --------------------------------- Services Section ends  

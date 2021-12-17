@@ -1,19 +1,24 @@
+.whyus-section {
+  background-color: #b5bdb5;
+  margin-top: 5rem;
+  padding-bottom: 1rem;
+}
+
 .whyus-container {
   width: 80%;
 }
-.whyus-section .mini-para {
-  font-size: 15px;
-}
 
 .whyus-section img {
-  width: 400px;
+  width: 300px;
   height: 600px;
   margin-top: 5rem;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 0.8rem 0.8rem;
   border-radius: 1.5rem;
+  margin-left: -1.5rem;
+  margin-bottom: 4rem;
 }
 
-.whyus-section .mini-title {
+.whyus-section .title {
   text-transform: uppercase;
   font-weight: bolder;
   margin: 3rem 0;
@@ -21,15 +26,18 @@
   font-size: 30px;
 }
 
-.whyus-section .main-heading {
+.whyus-section .heading {
   font-weight: normal;
 }
 
-.whyus-section-info {
+.whyus-section .info {
   margin-top: 1.5rem;
 }
+.whyus-section .para {
+  font-size: 15px;
+}
 
-.whyus-section .whyus-section-number {
+.whyus-section .number {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
@@ -41,27 +49,13 @@
   place-items: center;
 }
 
-.whyus-section-data {
+.whyus-section .data {
   padding-left: 2rem;
 }
 
-.whyus-section-data p {
+.whyus-section .data p {
   margin: 1rem 0;
 }
 .whyus-section .whyus-section-button {
   padding: 0rem;
-}
-
-/* 2nd section of about us  */
-.whyus-section .useapp-button {
-  height: 50px;
-  width: 200px;
-}
-
-.our-services-rightside {
-  margin-top: 10rem;
-}
-
-.our-services-rightside-content {
-  padding-left: 8rem;
 }

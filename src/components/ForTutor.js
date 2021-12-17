@@ -1,16 +1,14 @@
 import React, { useState } from "react";
-import "./Services.css";
+import "./ForTutor.css";
 import forTutorApi from "../API/forTutorApi.js";
 
 const ForTutor = () => {
   const [serviceData, setServiceData] = useState(forTutorApi);
   return (
     <>
-      <section className="service-main-container">
-        <div className="container service-container">
-          <h1 className="main-heading text-center fw-bold">
-            Register as a Tutor
-          </h1>
+      <section className="fortutor-section">
+        <div className="container fortutor-container">
+          <h1 className="heading text-center fw-bold">Register as a Tutor</h1>
           <div className="row">
             {serviceData.map((curElem) => {
               const { id, logo, title, info } = curElem;

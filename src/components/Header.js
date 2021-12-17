@@ -4,18 +4,17 @@ import "./Header.css";
 const Header = () => {
   return (
     <>
-      <header className="header-section">
-        <section className="container header-container">
+      <header className="header-section ">
+        <section className="container header-container ">
           <div className="row">
             <div className="col-12 col-lg-6 header-left-side d-flex justify-content-center flex-column align-items-start ">
               <h1 className="display-2">
                 Learn Quran with tajweed <br /> Easy For You.
               </h1>
               <p className="main-hero-para">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et,
-                quia quis? Ipsa officia ad deserunt voluptate quam, nisi odio
-                officiis tempora recusandae voluptate quam, nisi odio officiis
-                tempora recusandae
+                Whether you are proficient in reading the Quran and want to
+                teach others or whether you wish to learn, create an account and
+                begin your journey towards success.
               </p>
               <h3>Get early access for you</h3>
               <div className="input-group mt-3">
@@ -29,7 +28,7 @@ const Header = () => {
             </div>
 
             {/*  --------------- header right side--------------  */}
-            <div className="col-12 col-lg-6 header-right-side text-center useapp-section-leftside-img">
+            <div className="col-12 col-lg-6 text-center  header-right-side-img">
               <img
                 src="./images/hero1.png"
                 alt="heroimg"

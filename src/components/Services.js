@@ -6,8 +6,8 @@ const Services = () => {
   const [serviceData, setServiceData] = useState(servicesApi);
   return (
     <>
-      <section className="service-main-container">
-        <div className="container service-container">
+      <section className="service-section">
+        <div className="container service-container justify-content-center">
           <h1 className="main-heading text-center fw-bold">
             Our Best Services
           </h1>

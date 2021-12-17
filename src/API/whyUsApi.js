@@ -1,23 +1,23 @@
 const whyUsApi = [
   {
     id: 1,
-    title: "Download",
-    info: "Download app on your mobile. Our app is available for both iOS and Android.",
+    title: "Simple",
+    info: "Simple as yet as possible.",
   },
   {
     id: 2,
-    title: "Register / Sign In",
-    info: "If you are new to Quran Tutor, then first register your-self, and sign in to g=explore more things.",
+    title: "One Platform",
+    info: "Now you can Teach and Learn on One Platform which is Quran Tutor, no need of zoom and Skype",
   },
   {
     id: 3,
-    title: "Find SomeOne",
-    info: "If you are student then find a tutor to start learning. If you're a Tutor, then find some students who want to learn.",
+    title: "Secure",
+    info: "We provide secure invironment for both students and teachers to use our app.",
   },
   {
     id: 4,
-    title: "Payment",
-    info: "We provide secure payment method to transfer payments.",
+    title: "Reliable",
+    info: "Reliablity is our first concern.",
   },
 ];
 
