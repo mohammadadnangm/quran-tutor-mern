@@ -9,13 +9,12 @@
 }
 
 .whyus-section img {
-  width: 300px;
-  height: 600px;
-  margin-top: 5rem;
+  width: 100%;
+  height: 500px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 0.8rem 0.8rem;
   border-radius: 1.5rem;
-  margin-left: -1.5rem;
   margin-bottom: 4rem;
+  margin: 5rem 0;
 }
 
 .whyus-section .title {
