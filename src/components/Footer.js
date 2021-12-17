@@ -13,25 +13,25 @@ const Footer = () => {
                   <h2>Company</h2>
                   <ul>
                     <li>
-                      <a href="#">About Us</a>
+                      <a href="/about">About Us</a>
                     </li>
                     <li>
-                      <a href="#">Contact Us</a>
+                      <a href="/contact">Contact Us</a>
                     </li>
                     <li>
-                      <a href="#">FAQs</a>
+                      <a href="/faqs">FAQs</a>
                     </li>
                     <li>
-                      <a href="#">Prices and Plans</a>
+                      <a href="/pricingplan">Prices and Plans</a>
                     </li>
                     <li>
-                      <a href="#">Services</a>
+                      <a href="/service">Services</a>
                     </li>
                     <li>
-                      <a href="#">Privacy Policy</a>
+                      <a href="/privacypolicy">Privacy Policy</a>
                     </li>
                     <li>
-                      <a href="#">ToS</a>
+                      <a href="/tos">ToS</a>
                     </li>
                   </ul>
                 </div>
@@ -55,16 +55,16 @@ const Footer = () => {
                   <h2>Usefull Links</h2>
                   <ul>
                     <li>
-                      <a href="#">Find Tutors</a>
+                      <a href="/findtutors">Find Tutors</a>
                     </li>
                     <li>
-                      <a href="#">Find Students</a>
+                      <a href="/findtutors">Find Students</a>
                     </li>
                     <li>
-                      <a href="#">Read Quran</a>
+                      <a href="/quran">Read Quran</a>
                     </li>
                     <li>
-                      <a href="#">Read Qaida</a>
+                      <a href="/qaida">Read Qaida</a>
                     </li>
                   </ul>
                 </div>

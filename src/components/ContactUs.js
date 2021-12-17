@@ -25,8 +25,8 @@ const ContactUs = () => {
     const { firstName, lastName, phone, email, address, message } = userData;
 
     if (firstName && lastName && phone && email && address && message) {
-      const res = fetch(
-        "https://reactfirebasewebsite-default-rtdb.firebaseio.com/userDataRecords.json",
+      const res = await fetch(
+        "https://quran-tutor-mern-default-rtdb.firebaseio.com/userDataRecords.JSON",
         {
           method: "POST",
           headers: {
