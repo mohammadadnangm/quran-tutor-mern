@@ -35,10 +35,10 @@ const Header = () => {
                 className="img-fluid"
               />
               <div class="two-btn">
-                <button type="button" class="btn btn-primary btn-lg p-3 ">
+                <button type="button" class="btn btn-primary btn-lg p-2 ">
                   Get Free Trial
                 </button>
-                <button type="button" class="btn btn-secondary btn-lg p-3">
+                <button type="button" class="btn btn-secondary btn-lg p-2">
                   Sign Up as Tutor
                 </button>
               </div>
