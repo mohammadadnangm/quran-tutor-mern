@@ -1,18 +1,18 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import AboutUs from "../components/AboutUs";
+import SignupC from "../components/SignupC";
 import Footer from "../components/Footer";
 
-const About = () => {
+const Signup = () => {
   return (
     <>
       <Navbar />
 
-      <AboutUs />
+      <SignupC />
 
       <Footer />
     </>
   );
 };
 
-export default About;
+export default Signup;

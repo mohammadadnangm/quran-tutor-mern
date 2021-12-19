@@ -26,7 +26,7 @@ const ContactUs = () => {
 
     if (firstName && lastName && phone && email && address && message) {
       const res = await fetch(
-        "https://quran-tutor-mern-default-rtdb.firebaseio.com/userDataRecords.JSON",
+        "https://quran-tutor-mern-default-rtdb.firebaseio.com/userDataRecords.json",
         {
           method: "POST",
           headers: {

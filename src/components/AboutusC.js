@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./AboutUs.css";
+import "./AboutusC.css";
 
-const AboutUs = () => {
+const AboutusC = () => {
   return (
     <>
       <section className="aboutus-section">
@@ -42,4 +42,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default AboutusC;

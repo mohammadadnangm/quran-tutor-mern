@@ -2,9 +2,14 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 
+import { useHistory } from "react-router-dom";
+import Signin from "../pages/Signin";
+import Signup from "../pages/Signup";
+
 const Navbar = () => {
   // toggle bar in mobile view click functionality
   const [show, setShow] = useState(false);
+  const history = useHistory();
 
   return (
     <>
@@ -35,23 +40,23 @@ const Navbar = () => {
                 </li>
 
                 <li class="nav-item">
-                  <NavLink class="nav-link" to="/findtutor">
+                  <NavLink class="nav-link" to="/findtutors">
                     Find Tutors
                   </NavLink>
                 </li>
                 <li class="nav-item">
-                  <NavLink class="nav-link" to="/findstudent">
+                  <NavLink class="nav-link" to="/findstudents">
                     Find Students
                   </NavLink>
                 </li>
                 <li class="nav-item">
                   <NavLink class="nav-link" to="/priceplan">
-                    Prices & Plans
+                    Plans
                   </NavLink>
                 </li>
                 <li class="nav-item">
-                  <NavLink class="nav-link" to="/about">
-                    About
+                  <NavLink class="nav-link" to="/aboutme">
+                    About Me
                   </NavLink>
                 </li>
                 <li class="nav-item">
@@ -59,12 +64,32 @@ const Navbar = () => {
                     Contact
                   </NavLink>
                 </li>
+                {/* <li class="nav-item">
+                  <NavLink class="nav-link" to="/signin">
+                    SignIn
+                  </NavLink>
+                </li>
+                <li class="nav-item">
+                  <NavLink class="nav-link" to="/signup">
+                    SignUp
+                  </NavLink>
+                </li> */}
               </ul>
               <form class="d-flex">
-                <button class="btn  btn-style" type="submit">
+                <button
+                  class="btn  btn-style"
+                  type="submit"
+                  //onClick={<Signup />}
+                  onClick={() => history.push("/signup")}
+                >
                   Sign Up
                 </button>
-                <button class="btn  btn-style btn-style-border" type="submit">
+                <button
+                  class="btn  btn-style btn-style-border"
+                  type="submit"
+                  // onClick={<Signin />}
+                  onClick={() => history.push("/signin")}
+                >
                   Log in
                 </button>
               </form>
