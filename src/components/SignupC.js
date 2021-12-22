@@ -1,8 +1,11 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import "./SignupC.css";
+import axios from "axios";
 
 const SignupC = () => {
+  const history = useHistory();
+
   const [user, setUser] = useState({
     name: "",
     email: "",
@@ -11,13 +14,28 @@ const SignupC = () => {
     password: "",
     cpassword: "",
   });
-  let name, value;
-  const handleInputs = (e) => {
-    console.log(e);
-    name = e.target.name;
-    value = e.target.value;
 
-    setUser({ ...user, [name]: value });
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setUser({
+      ...user,
+      [name]: value,
+    });
+  };
+
+  const Signup = (e) => {
+    e.preventDefault();
+    // console.log(user);
+
+    const { name, email, phone, work, password, cpassword } = user;
+    if (name && email && phone && work && password && password === cpassword) {
+      axios.post("/signup", user).then((res) => {
+        alert(res.data.message);
+        history.push("/signin");
+      });
+    } else {
+      alert("invlid input front end");
+    }
   };
 
   return (
@@ -57,7 +75,7 @@ const SignupC = () => {
                           autoComplete="off"
                           placeholder="Name"
                           value={user.name}
-                          onChange={handleInputs}
+                          onChange={handleChange}
                         />
                       </div>
                       <div className="col-12 col-lg-6 signup-input-feild">
@@ -69,7 +87,7 @@ const SignupC = () => {
                           className="form-control"
                           placeholder="Email"
                           value={user.email}
-                          onChange={handleInputs}
+                          onChange={handleChange}
                         />
                       </div>
                     </div>
@@ -83,19 +101,19 @@ const SignupC = () => {
                           className="form-control"
                           placeholder="Phone Number "
                           value={user.phone}
-                          onChange={handleInputs}
+                          onChange={handleChange}
                         />
                       </div>
                       <div className="col-12 col-lg-6 signup-input-feild">
                         <input
                           type="text"
-                          name="profession"
-                          id="profession"
+                          name="work"
+                          id="work"
                           autoComplete="off"
                           className="form-control"
-                          placeholder="Profession"
-                          value={user.profession}
-                          onChange={handleInputs}
+                          placeholder="Work"
+                          value={user.work}
+                          onChange={handleChange}
                         />
                       </div>
                     </div>
@@ -109,7 +127,7 @@ const SignupC = () => {
                           className="form-control"
                           placeholder="Password"
                           value={user.password}
-                          onChange={handleInputs}
+                          onChange={handleChange}
                         />
                       </div>
                     </div>
@@ -124,7 +142,7 @@ const SignupC = () => {
                           className="form-control"
                           placeholder="Confirm Password"
                           value={user.cpassword}
-                          onChange={handleInputs}
+                          onChange={handleChange}
                         />
                       </div>
                     </div>
@@ -132,7 +150,7 @@ const SignupC = () => {
                     <button
                       type="submit"
                       className="btn btn-style w-100 mt-5"
-                      // onClick={submitData}
+                      onClick={Signup}
                     >
                       Sign Up
                     </button>

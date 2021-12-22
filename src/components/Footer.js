@@ -40,13 +40,13 @@ const Footer = () => {
                   <h2>Download App</h2>
                   <ul>
                     <li>
-                      <a href="#">IOS</a>
+                      <a href="/">IOS</a>
                     </li>
                     <li>
-                      <a href="#">Android</a>
+                      <a href="/">Android</a>
                     </li>
                     <li>
-                      <a href="#">How to Use App?</a>
+                      <a href="/">How to Use App?</a>
                     </li>
                   </ul>
                 </div>
@@ -73,29 +73,29 @@ const Footer = () => {
                   <h2>Follow Us</h2>
                   <div className="row">
                     <div className="col-3 mx-auto">
-                      <i class="fab fa-facebook-f fontawesome-style"></i>
+                      <i className="fab fa-facebook-f fontawesome-style"></i>
                     </div>
                     <div className="col-3 mx-auto">
-                      <a href="#">
-                        <i class="fab fa-instagram fontawesome-style"></i>
+                      <a href="/">
+                        <i className="fab fa-instagram fontawesome-style"></i>
                       </a>
                     </div>
                     <div className="col-3 mx-auto">
-                      <i class="fab fa-youtube fontawesome-style"></i>
+                      <i className="fab fa-youtube fontawesome-style"></i>
                     </div>
                     <div className="col-3 mx-auto">
-                      <i class="fab fa-twitter fontawesome-style"></i>
+                      <i className="fab fa-twitter fontawesome-style"></i>
                     </div>
                   </div>
 
                   <div className="row2">
                     <div className="col-12 mx-auto img1">
-                      <a href="#">
+                      <a href="/">
                         <img src="./images/appstore.png" alt="App Store" />
                       </a>
                     </div>
                     <div className="col-12 mx-auto img2">
-                      <a href="#">
+                      <a href="/">
                         <img src="./images/playstore.png" alt="App Store" />
                       </a>
                     </div>

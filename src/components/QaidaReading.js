@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./QaidaReading.css";
 
 const QaidaReading = () => {

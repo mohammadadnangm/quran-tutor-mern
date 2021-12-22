@@ -3,7 +3,7 @@ import "./ForTutor.css";
 import forTutorApi from "../API/forTutorApi.js";
 
 const ForTutor = () => {
-  const [serviceData, setServiceData] = useState(forTutorApi);
+  const [serviceData] = useState(forTutorApi);
   return (
     <>
       <section className="fortutor-section">
@@ -26,8 +26,8 @@ const ForTutor = () => {
               );
             })}
           </div>
-          <div class="d-grid gap-2 col-3 mx-auto find-tutor-button">
-            <button class="btn btn-secondary" type="button">
+          <div className="d-grid gap-2 col-3 mx-auto find-tutor-button">
+            <button className="btn btn-secondary" type="button">
               Sign Up As Tutor
             </button>
           </div>

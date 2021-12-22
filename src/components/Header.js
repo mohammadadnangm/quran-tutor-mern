@@ -34,11 +34,11 @@ const Header = () => {
                 alt="heroimg"
                 className="img-fluid"
               />
-              <div class="two-btn">
-                <button type="button" class="btn btn-primary btn-lg p-2 ">
+              <div className="two-btn">
+                <button type="button" className="btn btn-primary btn-lg p-2 ">
                   Get Free Trial
                 </button>
-                <button type="button" class="btn btn-secondary btn-lg p-2">
+                <button type="button" className="btn btn-secondary btn-lg p-2">
                   Sign Up as Tutor
                 </button>
               </div>

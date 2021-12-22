@@ -1,8 +1,36 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React, { useState } from "react";
+//import { useHistory } from "react-router-dom";
 import "./SinginC.css";
+import axios from "axios";
 
 const SigninC = () => {
+  //const history = useHistory();
+
+  const [user, setUser] = useState({
+    email: "",
+    password: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setUser({
+      ...user,
+      [name]: value,
+    });
+  };
+
+  const Signin = () => {
+    axios
+      .post("/signin", user)
+      .then((res) => {
+        console.log("helo calldd front end");
+        alert(res.data.message);
+
+        //history.push("/signup");
+      })
+      .catch((err) => console.log(err));
+  };
+
   return (
     <>
       <section className="signin-section">
@@ -33,13 +61,13 @@ const SigninC = () => {
                     <div className="row">
                       <div className="col-12 mt-5 signup-input-feild">
                         <input
-                          type="text"
-                          name="password"
-                          id=""
+                          type="email"
+                          name="email"
+                          id="email"
                           className="form-control"
-                          placeholder="Password"
-                          // value={userData.address}
-                          // onChange={postUserData}
+                          placeholder="Email"
+                          value={user.email}
+                          onChange={handleChange}
                         />
                       </div>
                     </div>
@@ -47,13 +75,13 @@ const SigninC = () => {
                     <div className="row">
                       <div className="col-12 signup-input-feild">
                         <input
-                          type="text"
-                          name="cpassword"
-                          id=""
+                          type="password"
+                          name="password"
+                          id="password"
                           className="form-control"
-                          placeholder="Confirm Password"
-                          // value={userData.message}
-                          // onChange={postUserData}
+                          placeholder="Password"
+                          value={user.password}
+                          onChange={handleChange}
                         />
                       </div>
                     </div>
@@ -61,7 +89,7 @@ const SigninC = () => {
                     <button
                       type="submit"
                       className="btn btn-style w-100 mt-3"
-                      // onClick={submitData}
+                      onClick={Signin}
                     >
                       Sign In
                     </button>

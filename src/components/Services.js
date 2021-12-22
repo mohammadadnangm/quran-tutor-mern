@@ -3,7 +3,7 @@ import "./Services.css";
 import servicesApi from "../API/servicesApi.js";
 
 const Services = () => {
-  const [serviceData, setServiceData] = useState(servicesApi);
+  const [serviceData] = useState(servicesApi);
   return (
     <>
       <section className="service-section">

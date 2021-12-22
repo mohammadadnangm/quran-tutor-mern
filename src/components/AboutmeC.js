@@ -21,21 +21,21 @@ const AboutmeC = () => {
                   <h4>Tutor</h4>
                   <p className="profile-rating mt-3 mb-5">Ranking</p>
 
-                  <ul class="nav nav" role="tablist">
-                    <li class="nav-item">
-                      <a
-                        class="nav-link active"
+                  <ul className="nav nav" role="tablist">
+                    <li className="nav-item">
+                      <NavLink
+                        className="nav-link active"
                         id="home-tab"
                         data-toggle="tab"
-                        href="#home"
+                        to="/"
                         role="tab"
                       >
                         About
-                      </a>
+                      </NavLink>
                     </li>
-                    <li class="nav-item">
+                    <li className="nav-item">
                       <a
-                        class="nav-link active"
+                        className="nav-link active"
                         id="profile-tab"
                         data-toggle="tab"
                         href="#profile"
@@ -62,11 +62,11 @@ const AboutmeC = () => {
               <div className="col-md-4">
                 <div className="profile-links">
                   <p>Work Links</p>
-                  <a href="#">youtube</a>
-                  <a href="#">Facebook</a>
-                  <a href="#">instagram</a>
-                  <a href="#">twitter</a>
-                  <a href="#">linkedin</a>
+                  <a href="/">youtube</a>
+                  <a href="/">Facebook</a>
+                  <a href="/">instagram</a>
+                  <a href="/">twitter</a>
+                  <a href="/">linkedin</a>
                 </div>
               </div>
 

@@ -3,7 +3,7 @@ import "./HowItWorks.css";
 import howItWorkApi from "../API/howItWorkApi.js";
 
 const HowItWorks = () => {
-  const [workData, setWorkData] = useState(howItWorkApi);
+  const [workData] = useState(howItWorkApi);
   console.log(workData);
   return (
     <>
@@ -13,7 +13,7 @@ const HowItWorks = () => {
           <h3 className="sub-heading text-center"> 3 easy steps to start</h3>
           <div className="row">
             {workData.map((curElem) => {
-              const { id, logo, title, info } = curElem;
+              const { logo, title, info } = curElem;
               return (
                 <>
                   <div className="col-12 col-lg-4 text-center work-container-subdiv">
@@ -25,8 +25,8 @@ const HowItWorks = () => {
               );
             })}
           </div>
-          <div class="d-grid gap-2 col-3 mx-auto find-tutor-button">
-            <button class="btn btn-primary" type="button">
+          <div className="d-grid gap-2 col-3 mx-auto find-tutor-button">
+            <button className="btn btn-primary" type="button">
               Find Tutor
             </button>
           </div>

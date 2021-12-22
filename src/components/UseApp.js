@@ -3,7 +3,7 @@ import "./UseApp.css";
 import useAppApi from "../API/useAppApi.js";
 
 const UseApp = () => {
-  const [aboutData, setAboutData] = useState(useAppApi);
+  const [aboutData] = useState(useAppApi);
   return (
     <>
       <section className="useapp-section">

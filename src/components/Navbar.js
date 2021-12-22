@@ -3,8 +3,8 @@ import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 
 import { useHistory } from "react-router-dom";
-import Signin from "../pages/Signin";
-import Signup from "../pages/Signup";
+//import Signin from "../pages/Signin";
+//import Signup from "../pages/Signup";
 
 const Navbar = () => {
   // toggle bar in mobile view click functionality
@@ -14,13 +14,13 @@ const Navbar = () => {
   return (
     <>
       <section className="navbar-bg">
-        <nav class="navbar navbar-expand-lg navbar-light ">
-          <div class="container">
-            <a class="navbar-brand" href="#">
+        <nav className="navbar navbar-expand-lg navbar-light ">
+          <div className="container">
+            <a className="navbar-brand" href="/">
               Quran Tutor
             </a>
             <button
-              class="navbar-toggler"
+              className="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent"
@@ -29,38 +29,42 @@ const Navbar = () => {
               aria-label="Toggle navigation"
               onClick={() => setShow(!show)}
             >
-              <span class="navbar-toggler-icon"></span>
+              <span className="navbar-toggler-icon"></span>
             </button>
-            <div class={`collapse navbar-collapse ${show ? "show" : ""}`}>
-              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <NavLink class="nav-link active" aria-current="page" to="/">
+            <div className={`collapse navbar-collapse ${show ? "show" : ""}`}>
+              <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li className="nav-item">
+                  <NavLink
+                    className="nav-link active"
+                    aria-current="page"
+                    to="/"
+                  >
                     Home
                   </NavLink>
                 </li>
 
-                <li class="nav-item">
-                  <NavLink class="nav-link" to="/findtutors">
+                <li className="nav-item">
+                  <NavLink className="nav-link" to="/findtutors">
                     Find Tutors
                   </NavLink>
                 </li>
-                <li class="nav-item">
-                  <NavLink class="nav-link" to="/findstudents">
+                <li className="nav-item">
+                  <NavLink className="nav-link" to="/findstudents">
                     Find Students
                   </NavLink>
                 </li>
-                <li class="nav-item">
-                  <NavLink class="nav-link" to="/priceplan">
+                <li className="nav-item">
+                  <NavLink className="nav-link" to="/priceplan">
                     Plans
                   </NavLink>
                 </li>
-                <li class="nav-item">
-                  <NavLink class="nav-link" to="/aboutme">
+                <li className="nav-item">
+                  <NavLink className="nav-link" to="/aboutme">
                     About Me
                   </NavLink>
                 </li>
-                <li class="nav-item">
-                  <NavLink class="nav-link" to="/contact">
+                <li className="nav-item">
+                  <NavLink className="nav-link" to="/contact">
                     Contact
                   </NavLink>
                 </li>
@@ -75,9 +79,9 @@ const Navbar = () => {
                   </NavLink>
                 </li> */}
               </ul>
-              <form class="d-flex">
+              <form className="d-flex">
                 <button
-                  class="btn  btn-style"
+                  className="btn  btn-style"
                   type="submit"
                   //onClick={<Signup />}
                   onClick={() => history.push("/signup")}
@@ -85,7 +89,7 @@ const Navbar = () => {
                   Sign Up
                 </button>
                 <button
-                  class="btn  btn-style btn-style-border"
+                  className="btn  btn-style btn-style-border"
                   type="submit"
                   // onClick={<Signin />}
                   onClick={() => history.push("/signin")}

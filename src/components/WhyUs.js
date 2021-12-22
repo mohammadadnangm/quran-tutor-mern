@@ -3,7 +3,7 @@ import "./WhyUs.css";
 import whyUsApi from "../API/whyUsApi.js";
 
 const WhyUs = () => {
-  const [aboutData, setAboutData] = useState(whyUsApi);
+  const [aboutData] = useState(whyUsApi);
   return (
     <>
       <section className="whyus-section">
