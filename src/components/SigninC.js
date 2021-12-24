@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-//import { useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import "./SinginC.css";
 import axios from "axios";
 
 const SigninC = () => {
-  //const history = useHistory();
+  const history = useHistory();
 
   const [user, setUser] = useState({
     email: "",
@@ -19,16 +19,24 @@ const SigninC = () => {
     });
   };
 
-  const Signin = () => {
-    axios
-      .post("/signin", user)
-      .then((res) => {
-        console.log("helo calldd front end");
-        alert(res.data.message);
-
-        //history.push("/signup");
-      })
-      .catch((err) => console.log(err));
+  const Signin = async (e) => {
+    e.preventDefault();
+    const { email, password } = user;
+    if (!email || !password) {
+      alert("please fill email and password properly frontend");
+    } else {
+      await axios
+        .post("/signin", user)
+        .then((res) => {
+          alert(res.data.message);
+          //alert("Login success frontend");
+          history.push("/");
+          //alert(res.data.message);
+          // console.log("helo calldd front end");
+          // alert("Login success frontend");
+        })
+        .catch((err) => console.log(err));
+    }
   };
 
   return (

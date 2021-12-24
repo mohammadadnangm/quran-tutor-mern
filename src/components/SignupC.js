@@ -25,8 +25,6 @@ const SignupC = () => {
 
   const Signup = (e) => {
     e.preventDefault();
-    // console.log(user);
-
     const { name, email, phone, work, password, cpassword } = user;
     if (name && email && phone && work && password && password === cpassword) {
       axios.post("/signup", user).then((res) => {

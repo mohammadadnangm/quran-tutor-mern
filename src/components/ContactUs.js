@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import "./ContactUs.css";
+import axios from "axios";
+import { useHistory } from "react-router-dom";
 
 const ContactUs = () => {
+  const history = useHistory();
   const [userData, setUserData] = useState({
     firstName: "",
     lastName: "",
@@ -12,54 +15,23 @@ const ContactUs = () => {
   });
 
   let name, value;
-  const postUserData = (event) => {
-    name = event.target.name;
-    value = event.target.value;
+  const postUserData = (e) => {
+    name = e.target.name;
+    value = e.target.value;
 
     setUserData({ ...userData, [name]: value });
   };
 
-  // connect with firebase
-  const submitData = async (event) => {
-    event.preventDefault();
-    const { firstName, lastName, phone, email, address, message } = userData;
-
-    if (firstName && lastName && phone && email && address && message) {
-      const res = await fetch(
-        "https://quran-tutor-mern-default-rtdb.firebaseio.com/userDataRecords.json",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            firstName,
-            lastName,
-            phone,
-            email,
-            address,
-            message,
-          }),
-        }
-      );
-
-      if (res) {
-        setUserData({
-          firstName: "",
-          lastName: "",
-          phone: "",
-          email: "",
-          address: "",
-          message: "",
-        });
-        alert("Data Stored");
-      } else {
-        alert("plz fill the data");
-      }
-    } else {
-      alert("plz fill the data");
-    }
-  };
+  function submitData(e) {
+    e.preventDefault();
+    axios
+      .post("/contactus", userData)
+      .then((res) => {
+        alert(res.data.message);
+        history.push("/");
+      })
+      .catch((err) => console.log(err));
+  }
 
   return (
     <>
@@ -93,7 +65,7 @@ const ContactUs = () => {
                         <input
                           type="text"
                           name="firstName"
-                          id=""
+                          id="firstName"
                           className="form-control"
                           placeholder="First Name"
                           value={userData.firstName}
@@ -104,7 +76,7 @@ const ContactUs = () => {
                         <input
                           type="text"
                           name="lastName"
-                          id=""
+                          id="lastName"
                           className="form-control"
                           placeholder="Last Name"
                           value={userData.lastName}
