@@ -16,6 +16,7 @@ import Error from "./pages/Error";
 import FaQ from "./pages/FaQ";
 import Signin from "./pages/Signin";
 import Signup from "./pages/Signup";
+import Logout from "./components/Logout";
 
 const App = () => {
   return (
@@ -36,6 +37,7 @@ const App = () => {
         <Route path="/faqs" component={FaQ}></Route>
         <Route path="/signin" component={Signin}></Route>
         <Route path="/signup" component={Signup}></Route>
+        <Route path="/logout" component={Logout}></Route>
         <Route component={Error}></Route>
       </Switch>
     </>
