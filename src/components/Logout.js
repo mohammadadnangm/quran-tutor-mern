@@ -1,9 +1,11 @@
-import axios from "axios";
-import React, { useEffect } from "react";
+import React, { useEffect, useContext } from "react";
 import { useHistory } from "react-router-dom";
+
+import { UserContext } from "../App";
 
 function Logout() {
   // promises
+  const { state, dispatch } = useContext(UserContext); //for logout toggle
 
   const history = useHistory();
 
@@ -17,6 +19,7 @@ function Logout() {
       credentials: "include",
     })
       .then((res) => {
+        dispatch({ type: "USER", payload: false });
         history.push("/", { replace: true });
         if (res.status !== 200) {
           const error = new Error(res.error);

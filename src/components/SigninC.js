@@ -1,9 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { useHistory } from "react-router-dom";
 import "./SinginC.css";
 import axios from "axios";
+import { UserContext } from "../App";
 
 const SigninC = () => {
+  const { state, dispatch } = useContext(UserContext);
+
   const history = useHistory();
 
   const [user, setUser] = useState({
@@ -29,11 +32,10 @@ const SigninC = () => {
         .post("/signin", user)
         .then((res) => {
           alert(res.data.message);
-          //alert("Login success frontend");
+          //localStorage.setItem("token", "new");
+          dispatch({ type: "USER", payload: true });
+          alert("Login success frontend");
           history.push("/");
-          //alert(res.data.message);
-          // console.log("helo calldd front end");
-          // alert("Login success frontend");
         })
         .catch((err) => console.log(err));
     }
